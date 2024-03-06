@@ -33,8 +33,15 @@ public class AppTest
      */
     public void testPush()
     {
-        MyStack<Object> myStack = new MyStack<Object>();
+        MyStack<Object> myStack = new MyStack<>();
         myStack.push(1);
         assertFalse(myStack.isEmpty());
+    }
+
+    public void testPop()
+    {
+        MyStack<Object> myStack = new MyStack<>();
+        myStack.push(1);
+        assertEquals(1, myStack.pop());
     }
 }
