@@ -29,10 +29,12 @@ public class AppTest
     }
 
     /**
-     * Rigourous Test :-)
+     * Rigorous Test :-)
      */
-    public void testApp()
+    public void testPush()
     {
-        assertTrue( true );
+        MyStack<Object> myStack = new MyStack<Object>();
+        myStack.push(1);
+        assertFalse(myStack.isEmpty());
     }
 }
