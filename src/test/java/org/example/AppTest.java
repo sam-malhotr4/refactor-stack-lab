@@ -44,4 +44,18 @@ public class AppTest
         myStack.push(1);
         assertEquals(1, myStack.pop());
     }
+
+    //test to check implementation of isEmpty() method
+    public void testIsStackEmpty()
+    {
+        MyStack<Object> myStack = new MyStack<>();
+        assertTrue(myStack.isEmpty());
+    }
+
+    //test to check implementation of size() method
+    public void testStackSize()
+    {
+        MyStack<Object> myStack = new MyStack<>();
+        assertEquals(0, myStack.size());
+    }
 }
